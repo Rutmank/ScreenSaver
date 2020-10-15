@@ -19,7 +19,7 @@ namespace ScreenSave
             public float Z { get; set; }
         }
         
-        private Point[] points = new Point[15000]; // 15к элементов массива точек
+        private Point[] points = new Point[1500]; // 15к элементов массива точек
 
         private Random random = new Random(); // Объект для генерации случайных чисел
 
@@ -56,7 +56,7 @@ namespace ScreenSave
 
         private void DrawPoint(Point point)
         {
-            float pointSize = 3; // Размер точки
+            float pointSize = 4; // Размер точки
 
             float x = Interpolation(point.X / point.Z, 0, 1, 0, pictureBox1.Width) + pictureBox1.Width / 2; // Преобразование координат
 
