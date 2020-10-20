@@ -19,7 +19,7 @@ namespace ScreenSave
             public float Z { get; set; }
         }
         
-        private Point[] points = new Point[1500]; // 15к элементов массива точек
+        private Point[] points = new Point[1600]; // 15к элементов массива точек
 
         private Random random = new Random(); // Объект для генерации случайных чисел
 
